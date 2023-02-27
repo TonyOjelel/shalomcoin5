@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css" />
+    <title>Shalom Coin</title>
+</head>
+<body>
+    <div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Cypto Trading Platform Survey</h1>
+    <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve the Crypto Market
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>What is your favorite Trading Platform?</p>
+      <select id="dropdown" name="platform" class="form-control" required>
+        <option disabled selected value>Select Platform</option>
+        <option value="binance">Binance</option>
+        <option value="coinbase">Coinbase</option>
+        <option value="bitpanda">Bitpanda</option>
+        <option value="kucoin">KuCoin</option>
+        <option value="paypal">PayPal</option>
+        <option value="uniswap">UniSwap</option>
+        <option value="pancakeswap">PancakeSwap</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>How satisfied are you with that Platform?</p>
+      <label>
+        <input
+          name="satisfaction"
+          value="satisfied"
+          type="radio"
+          class="input-radio"
+          checked
+        />satisfied</label
+      >
+      <label>
+        <input
+          name="satisfaction"
+          value="neutral"
+          type="radio"
+          class="input-radio"
+        />neutral</label
+      >
+
+      <label
+        ><input
+          name="satisfaction"
+          value="unsatisfied"
+          type="radio"
+          class="input-radio"
+        />unsatisfied</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        What is your favorite feature of that Platform?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="fees">Low trading fees</option>
+        <option value="numberofcryptos">Number of cryptocurrencies supported</option>
+        <option value="typesoftransactions">Types of transactions supported</option>
+        <option value="tradingamount">Maximum trading amount</option>
+        <option value="securityfeatures">Security features</option>
+        <option value="cahrtingoptions">Comprehensive charting options</option>
+        <option value="beginnerfriendly">Beginner-friendly layout</option>
+      
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        In what coins do you invest the most?
+      </p>
+
+      <label
+        ><input
+          name="coins"
+          value="BitcoinBTC"
+          type="checkbox"
+          class="input-checkbox"
+                />Bitcoin BTC</label>
+
+         <label><input
+          name="coins"
+          value="EtheriumETH"
+          type="checkbox"
+          class="input-checkbox"
+                />Etherium ETH</label>
+         <label><input
+          name="coins"
+          value="ShalomCoinSHAL"
+          type="checkbox"
+          class="input-checkbox"
+                />ShalomCoin SHAL</label
+      >
+         <label><input
+          name="coins"
+          value="BinanceBNB"
+          type="checkbox"
+          class="input-checkbox"
+        />Binance BNB</label
+      >
+        <label><input
+          name="coins"
+          value="DogecoinDOGE"
+          type="checkbox"
+          class="input-checkbox"
+        />Dogecoin DOGE</label
+      >
+        <label><input
+          name="coins"
+          value="CardanoADA"
+          type="checkbox"
+          class="input-checkbox"
+        />Cardano ADA</label
+      >
+        <label><input
+          name="coins"
+          value="PolkadotDOT"
+          type="checkbox"
+          class="input-checkbox"
+        />Polkadot DOT</label
+      >
+        <label><input
+          name="coins"
+          value="ChainlinkLINK"
+          type="checkbox"
+          class="input-checkbox"
+        />Chainlink LINK</label
+      >
+        <label><input
+          name="coins"
+          value="LitecoinLTC"
+          type="checkbox"
+          class="input-checkbox"
+        />Litecoin LTC</label
+      >
+        <label><input
+          name="coins"
+          value="smallercryptos"
+          type="checkbox"
+          class="input-checkbox"
+        />Other smaller cryptos</label
+      >
+
+    </div>
+
+    <div class="form-group">
+      <p>What are your thoughts on the Crypto Market in general?</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
